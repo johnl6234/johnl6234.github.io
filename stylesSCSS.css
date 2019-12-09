@@ -25,4 +25,22 @@
   .navbar .active {
     background-color: #505050; }
 
+table {
+  width: 30%;
+  border: 2px solid black; }
+  table th {
+    border: 1px solid black;
+    padding: 5px;
+    color: lightgrey;
+    background-color: darkslategrey; }
+  table td {
+    border: 1px solid black;
+    padding: 5px;
+    background-color: dimgray;
+    color: white; }
+
+div span {
+  font-size: larger;
+  padding: 2em; }
+
 /*# sourceMappingURL=stylesSCSS.css.map */

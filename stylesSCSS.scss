@@ -36,3 +36,27 @@
     }
 
 }
+
+table {
+    width: 30%;
+    border: 2px solid black;
+    th {
+        border: 1px solid black;
+        padding: 5px;
+        color: lightgrey;
+        background-color: darkslategrey;
+    }
+    td {
+        border: 1px solid black;
+        padding: 5px;
+        background-color: dimgray;
+        color: white;
+    }
+}
+
+div {
+    span {
+        font-size: larger;
+        padding: 2em;
+    }
+}
