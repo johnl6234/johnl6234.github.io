@@ -1,28 +1,26 @@
 @media ( min-width: 540px) {
     body {
         background-color: black;
-        padding-left:50px;
-        padding-right:50px;
-        max-width: 100%;
+        max-width: 80%;
         margin: auto;
     }
 }
 
 @media ( max-width: 540px) {
     body {
-    background-color: black;
-    
-    max-width: 80%;
-    margin: auto;
+        background-color: black;
+        max-width: 100%;
+        margin: auto;
     }
 }
 
 .container {
+    max-width: 70%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.jumbotron{
+.jumbotron {
     padding: 10px;
     min-height: 120px;
     background-image: url('images/codeBackground.jpg');
@@ -33,7 +31,7 @@
     background-color: rgb(80, 80, 80);
 }
 
-img{
+img {
     max-width: 20%;
     object-fit: contain;
     max-height: 100px;
@@ -73,10 +71,11 @@ li a:hover {
     color: white;
 }
 
-.active{
+.active {
     background-color: rgb(80, 80, 80);
 }
-main{
+
+main {
     background-color: rgb(80, 80, 80);
     padding: 10px;
     width: 100%;
@@ -93,12 +92,14 @@ main{
     display: table;
     clear: both;
 }
+
 .rightcolumn {
     float: left;
     width: 25%;
     padding-left: 20px;
 }
-.article{
+
+.article {
     color: rgb(255, 255, 255);
     border-radius: 5px;
     padding: 5px;
@@ -107,7 +108,7 @@ main{
     margin: 10px;
 }
 
-.icon{
+.icon {
     float: right;
 }
 
@@ -123,4 +124,3 @@ footer {
     text-align: center;
     color: gray;
 }
-
