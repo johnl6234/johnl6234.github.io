@@ -52,43 +52,6 @@ img {
     margin: auto;
   }
 
-.navbar {
-    margin: 0px 0px 0px 0px;
-    width: 100%;
-    padding: 0px;
-}
-
-ul {
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin: 0px;
-    list-style-type: none;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    margin: 0px;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: rgb(0, 0, 0);
-    color: white;
-}
-
-.active {
-    background-color: rgb(80, 80, 80);
-}
 
 main {
     background-color: rgb(80, 80, 80);
@@ -98,13 +61,18 @@ main {
 
 
 .article {
-    color: rgb(255, 255, 255);
+    color: rgb(17, 17, 17);
     border-radius: 5px;
     padding: 10px;
     background-color: rgb(107, 107, 107);
     margin: 10px;
 }
 
+.article img {
+    border-radius: 5px;
+    border: 2px solid #021a40;
+    border-color: black;
+}
 .icon {
     float: right;
 }
@@ -125,3 +93,10 @@ footer {
     text-align: center;
     color: gray;
 }
+
+#titlehead {
+    color: greenyellow;
+    padding-left: 2em;
+    margin-left: 2em;
+}
+
