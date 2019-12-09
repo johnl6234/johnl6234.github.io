@@ -4,6 +4,13 @@
         max-width: 80%;
         margin: auto;
     }
+    .jumbotron {
+        min-height: 120px;
+    }
+
+    .jumbotron > p {
+        font-size: xx-large;
+    }
 }
 
 @media ( max-width: 540px) {
@@ -12,12 +19,18 @@
         max-width: 100%;
         margin: auto;
     }
+    .jumbotron {
+        min-height: 70px;
+    }
+
+    .jumbotron > p {
+        font-size: large;
+    }
 }
 
 
 .jumbotron {
     padding: 10px;
-    min-height: 120px;
     background-image: url('images/codeBackground.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -27,11 +40,17 @@
     color: rgb(255, 255, 255);
 }
 
-img {
+.jumbotron img {
     max-width: 20%;
     object-fit: contain;
     max-height: 100px;
 }
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    margin: auto;
+  }
 
 .navbar {
     margin: 0px 0px 0px 0px;
@@ -81,8 +100,7 @@ main {
 .article {
     color: rgb(255, 255, 255);
     border-radius: 5px;
-    padding: 5px;
-    padding-left: 10px;
+    padding: 10px;
     background-color: rgb(107, 107, 107);
     margin: 10px;
 }
