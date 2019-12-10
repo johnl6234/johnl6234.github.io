@@ -49,8 +49,10 @@ table {
     td {
         border: 1px solid black;
         padding: 5px;
-        background-color: dimgray;
         color: white;
+    }
+    tr:nth-child(odd){
+        background-color: rgb(43, 42, 42)!important;
     }
 }
 

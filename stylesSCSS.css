@@ -36,8 +36,9 @@ table {
   table td {
     border: 1px solid black;
     padding: 5px;
-    background-color: dimgray;
     color: white; }
+  table tr:nth-child(odd) {
+    background-color: #2b2a2a !important; }
 
 div span {
   font-size: larger;
