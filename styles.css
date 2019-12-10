@@ -100,3 +100,11 @@ footer {
     margin-left: 2em;
 }
 
+.description {
+    color: seashell;
+    padding: 5px;
+    margin-top: 2px;
+}
+.imglink {
+    border: none!important;
+}
