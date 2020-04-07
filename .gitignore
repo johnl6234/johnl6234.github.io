@@ -262,3 +262,5 @@ __pycache__/
 /BasicProject/env
 /BasicProject/.mypy_cache/3.6
 /FlaskWeb/env
+/env
+env
