@@ -4,7 +4,6 @@ from app import app
 @app.route('/')
 @app.route('/index')
 def index():
-    """Renders a sample page."""
     return render_template("index.html", title="DeadWormy Gaming")
 
 @app.route('/gaming')
