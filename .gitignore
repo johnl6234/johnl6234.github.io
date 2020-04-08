@@ -264,5 +264,7 @@ __pycache__/
 /FlaskWeb/env
 /env
 env
+env/
 /env1
 env1
+env/
