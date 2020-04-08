@@ -1,0 +1,183 @@
+@media ( min-width: 540px) {
+    body {
+        background-color: black;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .jumbotron {
+        min-height: 120px;
+    }
+
+        .jumbotron > p {
+            font-size: xx-large;
+        }
+}
+
+@media ( max-width: 540px) {
+    body {
+        background-color: black;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .jumbotron {
+        min-height: 70px;
+    }
+
+        .jumbotron > p {
+            font-size: large;
+        }
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+.jumbotron {
+    padding: 10px;
+    background-image: url('images/codeBackground.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+    .jumbotron img {
+        max-width: 20%;
+        object-fit: contain;
+        max-height: 100px;
+    }
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    margin: auto;
+}
+
+
+main {
+    background-color: rgb(80, 80, 80);
+    padding: 10px;
+    width: 100%;
+}
+
+
+.article {
+    color: rgb(17, 17, 17);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(107, 107, 107);
+    margin: 10px;
+}
+
+    .article img {
+        border-radius: 5px;
+        border: 2px solid #021a40;
+        border-color: black;
+    }
+
+.icon {
+    float: right;
+}
+
+.float-left {
+    padding-left: 1em;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    bottom: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px;
+    background-color: rgb(53, 53, 53);
+    text-align: center;
+    color: gray;
+}
+
+#titlehead {
+    color: greenyellow;
+    padding-left: 2em;
+    margin-left: 2em;
+}
+
+.description {
+    color: seashell;
+    padding: 5px;
+    margin-top: 2px;
+}
+
+.imglink {
+    border: none !important;
+}
+
+.navbar {
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    padding: 0px;
+}
+
+    .navbar ul {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin: 0px;
+        list-style-type: none;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    .navbar li {
+        float: left;
+    }
+
+        .navbar li a {
+            display: block;
+            color: white;
+            margin: 0px;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            .navbar li a:hover {
+                background-color: black;
+                color: white;
+            }
+
+    .navbar .active {
+        background-color: #505050;
+    }
+
+table {
+    width: 30%;
+    border: 2px solid black;
+}
+
+    table th {
+        border: 1px solid black;
+        padding: 5px;
+        color: lightgrey;
+        background-color: darkslategrey;
+    }
+
+    table td {
+        border: 1px solid black;
+        padding: 5px;
+        color: white;
+    }
+
+    table tr:nth-child(odd) {
+        background-color: #2b2a2a !important;
+    }
+
+div span {
+    font-size: larger;
+    padding: 2em;
+}
