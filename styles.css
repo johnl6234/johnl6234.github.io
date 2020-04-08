@@ -79,6 +79,8 @@ main {
 }
 .icon {
     float: right;
+    width: 25px;
+    height: 25px;
 }
 
 .float-left {
@@ -110,5 +112,7 @@ footer {
     margin-top: 2px;
 }
 .imglink {
-    border: none!important;
+    border: none !important;
+    width : 30px;
+    height: 30px;
 }
