@@ -28,11 +28,6 @@
     }
 }
 
-.iframe{
-    width: 100%;
-    height: auto;
-}
-
 .jumbotron {
     padding: 10px;
     background-image: url('images/codeBackground.jpg');
@@ -65,6 +60,7 @@ main {
 
 
 .article {
+    height: auto;
     color: rgb(17, 17, 17);
     border-radius: 5px;
     padding: 10px;
@@ -115,4 +111,9 @@ footer {
     border: none !important;
     width : 30px;
     height: 30px;
+}
+.iframe {
+    display: inline-block;
+    width: 100%;
+    min-height: 250px;
 }
