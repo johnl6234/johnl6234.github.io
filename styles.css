@@ -1,6 +1,6 @@
 @media ( min-width: 540px) {
     body {
-        background-color: black;
+        background-image: linear-gradient(0deg, black, grey);
         max-width: 80%;
         margin: auto;
     }
