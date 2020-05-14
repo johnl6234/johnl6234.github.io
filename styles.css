@@ -61,10 +61,10 @@ main {
 
 .article {
     height: auto;
-    color: rgb(17, 17, 17);
+    color: white;
     border-radius: 5px;
     padding: 10px;
-    background-color: rgb(107, 107, 107);
+    background-color: #15202B;
     margin: 10px;
 }
 
