@@ -102,6 +102,12 @@ footer {
     margin-left: 2em;
 }
 
+p {
+    font-size: 14px;
+}
+h2 {
+    font-size: 18px;
+}
 .description {
     color: seashell;
     padding: 5px;
