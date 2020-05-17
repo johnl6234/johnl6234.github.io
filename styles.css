@@ -56,8 +56,8 @@ main {
     background-color: #30475e;
     padding: 10px;
     width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
 }
 
 
@@ -90,8 +90,7 @@ footer {
     width: 100%;
     margin: 0px;
     bottom: 0px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     padding: 5px;
     background-color: #3C3F5D;
     text-align: center;
