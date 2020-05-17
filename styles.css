@@ -1,6 +1,6 @@
 @media ( min-width: 540px) {
     body {
-        background-image: linear-gradient(0deg, black, grey);
+        background-color: #222831;
         max-width: 80%;
         margin: auto;
     }
@@ -15,7 +15,7 @@
 
 @media ( max-width: 540px) {
     body {
-        background-color: black;
+        background-color: #222831;
         max-width: 100%;
         margin: auto;
     }
@@ -53,18 +53,20 @@ img {
 
 
 main {
-    background-color: rgb(80, 80, 80);
+    background-color: #30475e;
     padding: 10px;
     width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 
 .article {
     height: auto;
-    color: white;
+    color: black;
     border-radius: 5px;
     padding: 10px;
-    background-color: #15202B;
+    background-color: #6d7993;
     margin: 10px;
 }
 
@@ -91,9 +93,9 @@ footer {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 5px;
-    background-color: rgb(53, 53, 53);
+    background-color: #3C3F5D;
     text-align: center;
-    color: gray;
+    color: white;
 }
 
 #titlehead {
@@ -103,7 +105,7 @@ footer {
 }
 
 .description {
-    color: seashell;
+    color: black;
     padding: 5px;
     margin-top: 2px;
 }
