@@ -108,6 +108,8 @@ img {
     display: inline-block;
     width: 100%;
     min-height: 250px;
+    border-radius: 5px;
+    border: 2px solid #021a40;
 }
 
 .icon {
@@ -121,13 +123,13 @@ img {
 }
 
 footer {
+    background-image: linear-gradient(#3C3F5D, #30475e);
     position: relative;
     width: 100%;
     margin: 0px;
     bottom: 0px;
     border-radius: 10px;
     padding: 5px;
-    background-color: #3C3F5D;
     text-align: center;
     color: white;
 }
