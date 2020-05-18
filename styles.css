@@ -4,13 +4,14 @@
         max-width: 80%;
         margin: auto;
     }
+
     .jumbotron {
         min-height: 120px;
     }
 
-    .jumbotron > p {
-        font-size: xx-large;
-    }
+        .jumbotron > p {
+            font-size: xx-large;
+        }
 }
 
 @media ( max-width: 540px) {
@@ -19,38 +20,41 @@
         max-width: 100%;
         margin: auto;
     }
+
     .jumbotron {
         min-height: 70px;
     }
 
-    .jumbotron > p {
-        font-size: large;
-    }
+        .jumbotron > p {
+            font-size: large;
+        }
 }
 
 .jumbotron {
     padding: 10px;
-    background-image: url('images/codeBackground.jpg');
+    background-image: url('images/code-screen.png');
     background-size: 100%;
     background-repeat: no-repeat;
+    margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
+    color: black;
 }
 
-.jumbotron img {
-    max-width: 20%;
-    object-fit: contain;
-    max-height: 100px;
+    .jumbotron img {
+        max-width: 20%;
+        object-fit: contain;
+        max-height: 100px;
+    }
+
+#titlehead {
+    color: #6d7993;
+    text-shadow: 5px 2px 2px #000000;
+    font-weight: 800;
+    padding-left: 2em;
+    margin-left: 2em;
 }
-
-img {
-    display: inline-block;
-    max-width: 100%;
-    margin: auto;
-  }
-
 
 main {
     background-color: #30475e;
@@ -59,7 +63,6 @@ main {
     border-radius: 10px;
     margin-bottom: 5px;
 }
-
 
 .article {
     height: auto;
@@ -70,11 +73,36 @@ main {
     margin: 10px;
 }
 
-.article img {
-    border-radius: 5px;
-    border: 2px solid #021a40;
-    border-color: black;
+    .article img {
+        border-radius: 5px;
+        border: 2px solid #021a40;
+        border-color: black;
+    }
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    margin: auto;
 }
+
+.imglink {
+    border: none !important;
+    width: 30px;
+    height: 30px;
+}
+
+.description {
+    color: black;
+    padding: 5px;
+    margin-top: 2px;
+}
+
+.iframe {
+    display: inline-block;
+    width: 100%;
+    min-height: 250px;
+}
+
 .icon {
     float: right;
     width: 25px;
@@ -95,26 +123,4 @@ footer {
     background-color: #3C3F5D;
     text-align: center;
     color: white;
-}
-
-#titlehead {
-    color: greenyellow;
-    padding-left: 2em;
-    margin-left: 2em;
-}
-
-.description {
-    color: black;
-    padding: 5px;
-    margin-top: 2px;
-}
-.imglink {
-    border: none !important;
-    width : 30px;
-    height: 30px;
-}
-.iframe {
-    display: inline-block;
-    width: 100%;
-    min-height: 250px;
 }
