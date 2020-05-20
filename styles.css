@@ -2,70 +2,64 @@
     body {
         background-color: #222831;
         max-width: 80%;
-        min-height: 100vh;
         margin: auto;
     }
-
     .jumbotron {
         min-height: 120px;
     }
 
-        .jumbotron > p {
-            font-size: xx-large;
-        }
+    .jumbotron > p {
+        font-size: xx-large;
+    }
 }
 
 @media ( max-width: 540px) {
     body {
         background-color: #222831;
         max-width: 100%;
-        min-height: 100vh;
         margin: auto;
     }
-
     .jumbotron {
         min-height: 70px;
     }
 
-        .jumbotron > p {
-            font-size: large;
-        }
+    .jumbotron > p {
+        font-size: large;
+    }
 }
 
 .jumbotron {
     padding: 10px;
-    background-image: url('images/code-screen.png');
+    background-image: url('images/codeBackground.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
-    margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
-    .jumbotron img {
-        max-width: 20%;
-        object-fit: contain;
-        max-height: 100px;
-    }
-
-#titlehead {
-    color: #6d7993;
-    text-shadow: 5px 2px 2px #000000;
-    font-weight: 800;
-    padding-left: 2em;
-    margin-left: 2em;
+.jumbotron img {
+    max-width: 20%;
+    object-fit: contain;
+    max-height: 100px;
 }
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    margin: auto;
+  }
+
 
 main {
     background-color: #30475e;
     padding: 10px;
     width: 100%;
-    min-height: 70vh;
     border-radius: 10px;
     margin-bottom: 5px;
 }
+
 
 .article {
     height: auto;
@@ -76,42 +70,11 @@ main {
     margin: 10px;
 }
 
-    .article img {
-        border-radius: 5px;
-        border: 2px solid #021a40;
-        border-color: black;
-    }
-
-a {
-    color: black;
-}
-
-img {
-    display: inline-block;
-    max-width: 100%;
-    margin: auto;
-}
-
-.imglink {
-    border: none !important;
-    width: 30px;
-    height: 30px;
-}
-
-.description {
-    color: black;
-    padding: 5px;
-    margin-top: 2px;
-}
-
-.iframe {
-    display: inline-block;
-    width: 100%;
-    min-height: 250px;
+.article img {
     border-radius: 5px;
     border: 2px solid #021a40;
+    border-color: black;
 }
-
 .icon {
     float: right;
     width: 25px;
@@ -123,13 +86,133 @@ img {
 }
 
 footer {
-    background-image: linear-gradient(#3C3F5D, #30475e);
     position: relative;
     width: 100%;
     margin: 0px;
     bottom: 0px;
     border-radius: 10px;
     padding: 5px;
+    background-color: #3C3F5D;
     text-align: center;
     color: white;
+}
+
+#titlehead {
+    color: greenyellow;
+    padding-left: 2em;
+    margin-left: 2em;
+}
+
+.description {
+    color: black;
+    padding: 5px;
+    margin-top: 2px;
+}
+.imglink {
+    border: none !important;
+    width : 30px;
+    height: 30px;
+}
+.iframe {
+    display: inline-block;
+    width: 100%;
+    min-height: 250px;
+}
+
+body {
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainBody {
+    border-radius: 10px;
+    padding: 40px 20px 40px 20px;
+    margin: auto;
+    width: 400px;
+    height: auto;
+    background-image: linear-gradient(-45deg, black, grey);
+}
+
+.screen {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border: 10px solid;
+    border-image-source: linear-gradient(45deg, black, grey);
+    border-image-slice: 1;
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: aquamarine;
+    height: 80px;
+    position: relative;
+}
+
+.small-screen-text {
+    text-align: left;
+    font-size: 12px;
+    position: absolute;
+    width: 100%;
+    height: 12px;
+    top: 2px;
+    left: 2px;
+}
+
+.screen-text {
+    text-align: right;
+    font-size: 64px;
+    position: absolute;
+    width: 100%;
+    height: 64px;
+    bottom: 15px;
+    right: 10px;
+}
+
+.screen-text-small {
+    text-align: right;
+    font-size: 32px;
+    position: absolute;
+    width: 100%;
+    height: 32px;
+    bottom: 15px;
+    right: 10px;
+}
+
+.button-grid {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+
+.button-container {
+    border-radius: 20px;
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+
+.number-button {
+    color: white;
+    font-size: 32px;
+    border-radius: 20px;
+    background-color: darkgray;
+    background-image: linear-gradient(black, grey, black);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+button:active {
+    outline: none;
+    border: none;
+}
+
+button:focus {
+    outline: 0;
 }
