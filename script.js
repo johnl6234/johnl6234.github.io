@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                         document.getElementById('small-screen-text').innerHTML = firstNumbers + " " + multiplier + " " + secondNumbers;
                         if (answer.length > 7) {
-                            answer.truncate(7);
+                            document.getElementById('screen-text').setAttribute('class', 'screen-text-small');
                         }
                         document.getElementById('screen-text').innerHTML = answer;
                         multiplier = "";
@@ -44,7 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (multiplier === "") {
                     multiplier = button.innerHTML;
                     document.getElementById('small-screen-text').innerHTML = firstNumbers + " " + multiplier;
-
                 } else {
                     if (firstNumbers.length > 0 && secondNumbers.length > 0 && multiplier.length > 0) {
                         var firstFloat = parseFloat(firstNumbers);
@@ -72,9 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         secondNumbers = "";
                     }
                 }
-
              } else if (multiplier === "") {
-                if (firstNumbers.length < 14) {
+                if (firstNumbers.length < 12) {
                     firstNumbers += button.innerHTML;
                 };
                 if (firstNumbers.length > 7) {
@@ -83,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 document.getElementById('screen-text').innerHTML = firstNumbers;
             } else {
-                if (secondNumbers.length < 14) {
+                if (secondNumbers.length < 12) {
                     secondNumbers += button.innerHTML;
                 };
                 if (secondNumbers.length > 7) {
@@ -95,5 +93,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
     });
-
 })
