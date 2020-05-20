@@ -6,7 +6,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.number-button').forEach(button => {
         button.onclick = () => {
-            if (button.innerHTML === "=") {
+            if (button.innerHTML === "C") {
+                if (secondNumbers.length > 0) {
+                    secondNumbers = "";
+                    document.getElementById('screen-text').innerHTML = "";
+                } else if (multiplier !== "") {
+                    multiplier = "";
+                    document.getElementById('small-screen-text').innerHTML = firstNumbers;
+                } else if (firstNumbers.length > 0) {
+                    firstNumbers = "";
+                    document.getElementById('screen-text').innerHTML = "";
+                }
+            } else if (button.innerHTML === "=") {
                 {
                     if (firstNumbers.length > 0 && secondNumbers.length > 0 && multiplier.length > 0) {
                         var firstFloat = parseFloat(firstNumbers);
@@ -36,8 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         secondNumbers = "";
                     }
                 }
-            }else
-            if (button.innerHTML === "+" ||
+            } else if (button.innerHTML === "+" ||
                 button.innerHTML === "-" ||
                 button.innerHTML === "*" ||
                 button.innerHTML === "/" && firstNumbers.length > 0) {
@@ -71,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         secondNumbers = "";
                     }
                 }
-             } else if (multiplier === "") {
+            } else if (multiplier === "") {
                 if (firstNumbers.length < 12) {
                     firstNumbers += button.innerHTML;
                 };
@@ -80,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
 
                 document.getElementById('screen-text').innerHTML = firstNumbers;
-            } else {
+            } else if (button.innerHTML != "C") {
                 if (secondNumbers.length < 12) {
                     secondNumbers += button.innerHTML;
                 };
@@ -89,7 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
 
                 document.getElementById('screen-text').innerHTML = secondNumbers;
-
             }
         };
     });
