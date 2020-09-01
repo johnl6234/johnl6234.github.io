@@ -82,7 +82,7 @@
     <script>
         (function () {
             if (!localStorage.getItem('cookieconsent')) {
-                document.body.innerHTML += '\<div class="cookieconsent" style="position:fixed;padding:20px;left:0;bottom:0;background-color:#00FF00;color:#FFF;text-align:center;width:100%;z-index:99999;">\This site uses cookies. \<a href="#" >Click here </a>\to accept the use of these cookies. \<a href="cookieAndPrivacyPolicy.html" >View our cookie polict </a>\</div>\'';
+                document.body.innerHTML += '\<div class="cookieconsent" style="position:fixed;padding:20px;left:0;bottom:0;background-color:#00FF00;color:#FFF;text-align:center;width:100%;z-index:99999;">\This site uses cookies. \<a href="#" >Click here </a>\to accept the use of these cookies. \<a href="cookieAndPrivacyPolicy.html" >View our cookie policy </a>\</div>\'';
                 document.querySelector('.cookieconsent a').onclick = function (e) {
                     e.preventDefault();
                     document.querySelector('.cookieconsent').style.display = 'none';
