@@ -24,6 +24,8 @@
     <link href="stylesSCSS.css" rel="stylesheet">
     <script data-ad-client="ca-pub-3720614544178531" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script src="https://kit.fontawesome.com/2e1bcc47df.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
 </head>
 
 <body>
@@ -105,16 +107,20 @@
         <a href="https://deadwormy6234.itch.io/" target="blank"><i class="fab fa-itch-io fa-lg icon" style="color: red;"></i></a>
     </footer>
     <script>
-        (function () {
-            if (!localStorage.getItem('cookieconsent')) {
-                document.body.innerHTML += '\<div class="cookieconsent" style="position:fixed;padding:20px;left:0;bottom:0;background-color:#00FF00;color:#FFF;text-align:center;width:100%;z-index:99999;">\This site uses cookies. \<a href="#" >Click here </a>\to accept the use of these cookies. \<a href="cookieAndPrivacyPolicy.html" >View our cookie policy </a>\</div>\'';
-                document.querySelector('.cookieconsent a').onclick = function (e) {
-                    e.preventDefault();
-                    document.querySelector('.cookieconsent').style.display = 'none';
-                    localStorage.setItem('cookieconsent', true);
-                };
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                "background": "#252e39"
+                },
+                "button": {
+                "background": "#14a7d0"
+                }
+            },
+            "type": "opt-out",
+            "content": {
+                "href": "cookiePolicy.html"
             }
-        })();
+        });
     </script>
 </body>
 
